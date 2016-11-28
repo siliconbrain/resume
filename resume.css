@@ -1,0 +1,226 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700&subset=latin-ext);
+
+a, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 3em;
+}
+
+body {
+    /*border: 1px solid black;*/
+    height: 29.7cm;
+    width: 21.0cm;
+}
+
+body > header section {
+    display: flex;
+}
+
+body > header > .top {
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+body > header > .bottom {
+    justify-content: flex-end;
+}
+
+#name {
+    font-size: 42pt;
+}
+
+#first-name {
+    margin-right: 11pt;
+}
+
+#last-name {
+    font-weight: 600;
+}
+
+#title {
+    color: darkgray;
+    font-size: 24pt;
+}
+
+#profile-picture {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 11pt;
+}
+
+#profile-picture img {
+    width: 180px;
+    height: 180px;
+}
+
+body > header > hr {
+    border: none;
+    border-top: 2px solid dimgray;
+}
+
+body > main {
+    display: flex;
+}
+
+#contacts {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 201px;
+}
+
+#contacts > section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 12pt 0;
+}
+
+#contacts > section > i {
+    font-size: 24pt;
+    margin-bottom: 8pt;
+}
+
+#contacts .fa-mobile {
+    font-size: 28pt;
+}
+
+#contacts .fa-envelope {
+    font-size: 21pt;
+}
+
+body > main > div {
+    flex-grow: 1;
+    margin-right: 24pt;
+}
+
+#education {
+    display: flex;
+    flex-direction: column;
+}
+
+#education .degree {
+    display: flex;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+#education .degree:last-child {
+    margin-bottom: 0;
+}
+
+#education .degree .period {
+    flex-shrink: 0;
+    margin-right: 1em;
+    text-align: right;
+    width: 115px;
+}
+
+#education .degree div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#education .degree .school {
+    font-weight: normal;
+    margin-top: 0.5em;
+}
+
+#experience .job {
+    display: flex;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+#experience .job:last-child {
+    margin-bottom: 0;
+}
+
+#experience .job .period {
+    flex-shrink: 0;
+    margin-right: 1em;
+    text-align: right;
+    width: 115px;
+}
+
+#experience .job > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#experience .job .company {
+    font-weight: normal;
+}
+
+#experience .respons {
+    font-size: 0.95em;
+    margin-top: 0.5em;
+}
+#experience .respons .tech {
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 0.25em;
+}
+
+#experience .respons ul {
+    margin: 0;
+    padding-left: 21px;
+}
+
+#experience .respons li {
+    margin-bottom: 0.5em;
+}
+
+#experience .respons li div {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#skills h2 {
+    font-size: 1.25em;
+    margin: 0.25em 0;
+}
+
+#skills > div {
+    display: flex;
+}
+
+#skills > div > section {
+    margin-right: 2em;
+}
+
+#skills > div > section:last-child {
+    margin-right: 0;
+}
+
+#skills > div > section > div {
+    margin-bottom: 0.25em;
+}
+
+#languages {
+    width: 300px;
+}
+
+#languages .language {
+    display: flex;
+    justify-content: space-between;
+}
+
+#languages .language span:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+#programming em {
+    font-style: inherit;
+    font-weight: 600;
+}
