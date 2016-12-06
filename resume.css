@@ -207,9 +207,13 @@ body {
     font-weight: 600;
 }
 
+.qr {
+    margin-top: 0 !important;
+}
+
 .qr img {
-    width: 11em;
-    height: 11em;
+    width: 176px;
+    height: 176px;
 }
 
 .education .degree:last-child,
