@@ -5,6 +5,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=890">
         <link rel="stylesheet" type="text/css" href="resume.css">
+        <script>
+            var showAllClassToken = "show-all";
+            function getMainContainer() { return document.querySelector("main"); }
+            function showMore() { getMainContainer().classList.add(showAllClassToken); }
+            function showLess() { getMainContainer().classList.remove(showAllClassToken); }
+        </script>
     </head>
     <body>
         <div class="page" id="en">
@@ -45,84 +51,106 @@
                     </section>
                     <section class="experience">
                         <h1>Experience</h1>
-                        <section class="job">
-                            <span class="period">2012–present</span>
-                            <div>
+                        <div class="jobs">
+                            <section class="job">
+                                <span class="period">2017–present</span>
                                 <div>
-                                    <span class="title">R&amp;D assistant</span> – <span class="company"><a href="http://ik.bme.hu">BME Informatikai Központ</a></span>
+                                    <div>
+                                        <span class="title">software engineer</span> – <span class="company"><a href="https://www.balabit.com/">Balabit Europe Kft.</a></span>
+                                    </div>
+                                    <div class="respons">
+                                        <ul>
+                                            <li>
+                                                <div class="project">
+                                                    <span class="desc">develoment and integration support of <a href="https://www.balabit.com/privileged-access-management">PAM product</a></span>
+                                                    <span class="tech">Akka, Scala</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="respons">
-                                    <ul>
-                                        <li>
-                                            <div class="project">
-                                                <span class="desc">development of <a href="https://circlecloud.org/">CIRCLE IaaS cloud</a></span>
-                                                <span class="tech">Celery, Django, libvirt, Python</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="project">
-                                                <span class="desc">development of <a href="https://jporta.iit.bme.hu">JPORTA online education portal</a></span>
-                                                <span class="tech">Celery, Django, Python</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="job">
-                            <span class="period">2014–2015</span>
-                            <div>
+                            </section>
+                            <section class="job">
+                                <span class="period">2012–2017</span>
                                 <div>
-                                    <span class="title">senior software developer</span> – <span class="company"><a href="http://www.rubin.hu/">Rubin Informatikai Zrt.</a></span>
+                                    <div>
+                                        <span class="title">R&amp;D assistant</span> – <span class="company"><a href="http://ik.bme.hu">BME Informatikai Központ</a></span>
+                                    </div>
+                                    <div class="respons">
+                                        <ul>
+                                            <li>
+                                                <div class="project">
+                                                    <span class="desc">development of <a href="https://circlecloud.org/">CIRCLE IaaS cloud</a></span>
+                                                    <span class="tech">Celery, Django, libvirt, Python</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="project">
+                                                    <span class="desc">development of <a href="https://jporta.iit.bme.hu">JPORTA online education portal</a></span>
+                                                    <span class="tech">Celery, Django, Python</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="respons">
-                                    <ul>
-                                        <li>
-                                            <div class="project">
-                                                <span class="desc">development of client software for self-service machines for <a href="http://www.vodafone.hu/">Vodafone Zrt.</a></span>
-                                                <span class="tech">.NET, C#, ReactiveX, SOAP, WPF</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="job">
-                            <span class="period">2012–2014</span>
-                            <div>
+                            </section>
+                            <section class="job">
+                                <span class="period">2014–2015</span>
                                 <div>
-                                    <span class="title">junior software developer</span> – <span class="company"><a href="http://bme.hu">BME</a></span>
+                                    <div>
+                                        <span class="title">senior software developer</span> – <span class="company"><a href="http://www.rubin.hu/">Rubin Informatikai Zrt.</a></span>
+                                    </div>
+                                    <div class="respons">
+                                        <ul>
+                                            <li>
+                                                <div class="project">
+                                                    <span class="desc">development of client software for self-service machines for <a href="http://www.vodafone.hu/">Vodafone Zrt.</a></span>
+                                                    <span class="tech">.NET, C#, ReactiveX, SOAP, WPF</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="respons">
-                                    <ul>
-                                        <li>
-                                            <div class="project">
-                                                <span class="desc">development of client software for <a href="http://www.magyarkozlekedes.hu/hir/6303-uj-funkciok-mav-start-jegykiado">ticket vending machines</a> for <a href="https://www.mavcsoport.hu/">MÁV-START Zrt.</a></span>
-                                                <span class="tech">.NET, C#, HTML, JavaScript, WCF</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="job">
-                            <span class="period">2010–2012</span>
-                            <div>
+                            </section>
+                            <section class="job">
+                                <span class="period">2012–2014</span>
                                 <div>
-                                    <span class="title">group leader</span> – <span class="company"><a href="http://kszk.sch.bme.hu/">Schönherz KSzK</a></span>
+                                    <div>
+                                        <span class="title">junior software developer</span> – <span class="company"><a href="http://bme.hu">BME</a></span>
+                                    </div>
+                                    <div class="respons">
+                                        <ul>
+                                            <li>
+                                                <div class="project">
+                                                    <span class="desc">development of client software for <a href="http://www.magyarkozlekedes.hu/hir/6303-uj-funkciok-mav-start-jegykiado">ticket vending machines</a> for <a href="https://www.mavcsoport.hu/">MÁV-START Zrt.</a></span>
+                                                    <span class="tech">.NET, C#, HTML, JavaScript, WCF</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="respons">
-                                    <ul>
-                                        <li>
-                                            <div class="project">
-                                                <span class="desc">leading a game development themed extracurricular activity group, organizing and conducting meetings, presentations, workshops</span>
-                                                <span class="tech">.NET, C#, SharpDX, XNA, networking</span>
-                                            </div>
-                                        </li>
-                                    </ul>
+                            </section>
+                            <section class="job">
+                                <span class="period">2010–2012</span>
+                                <div>
+                                    <div>
+                                        <span class="title">group leader</span> – <span class="company"><a href="http://kszk.sch.bme.hu/">Schönherz KSzK</a></span>
+                                    </div>
+                                    <div class="respons">
+                                        <ul>
+                                            <li>
+                                                <div class="project">
+                                                    <span class="desc">leading a game development themed extracurricular activity group, organizing and conducting meetings, presentations, workshops</span>
+                                                    <span class="tech">.NET, C#, SharpDX, XNA, networking</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        </section>
+                            </section>
+                        </div>
+                        <div class="more" title="Show more" onclick="showMore()"><i class="fa fa-ellipsis-h"></i></div>
+                        <div class="less" title="Show less" onclick="showLess()"><i class="fa fa-angle-double-up"></i></div>
                     </section>
                     <section class="skills">
                         <h1>Skills</h1>
@@ -134,7 +162,7 @@
                             </section>
                             <section class="skill-group prog-lang">
                                 <h2>Programming Languages</h2>
-                                <div>C, C++, <em>C#</em>, Clojure, Haskell, Java, JavaScript, <em>Python</em></div>
+                                <div>C, C++, <em>C#</em>, Clojure, Haskell, Java, JavaScript, <em>Python</em>, Scala</div>
                             </section>
                         </div>
                     </section>

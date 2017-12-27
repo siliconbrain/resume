@@ -139,6 +139,11 @@ body {
     margin-top: 0.5em;
 }
 
+.experience .jobs {
+    max-height: 430px;
+    overflow-y: hidden;
+}
+
 .experience .job {
     display: flex;
     font-weight: 600;
@@ -185,6 +190,23 @@ body {
     margin-top: 0.25em;
 }
 
+.experience .more {
+    cursor: pointer;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.experience .less {
+    cursor: pointer;
+    display: none;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.skills h1 {
+    margin-top: 0;
+}
+
 .skills h2 {
     font-size: 1em;
     margin: 0.25em 0;
@@ -219,4 +241,16 @@ body {
 .education .degree:last-child,
 .experience .job:last-child {
     margin-bottom: 0;
+}
+
+.show-all .experience .jobs {
+    max-height: unset;
+}
+
+.show-all .experience .more {
+    display: none;
+}
+
+.show-all .experience .less {
+    display: block;
 }
