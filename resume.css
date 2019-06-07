@@ -140,8 +140,11 @@ body {
 }
 
 .experience .jobs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     max-height: 430px;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .experience .job {
@@ -244,7 +247,10 @@ body {
 }
 
 .show-all .experience .jobs {
-    max-height: unset;
+    flex-wrap: nowrap;
+    max-height: 100vh;
+    overflow-y: hidden;
+    transition: max-height 1s;
 }
 
 .show-all .experience .more {
